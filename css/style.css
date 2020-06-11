@@ -28,6 +28,30 @@
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 13px;
     font-weight: 600;
-    color: #FF4F2E !important;
     text-transform: uppercase;
+}
+.body{
+    max-width: 64rem;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 1px;
+}
+.card{
+    border:none !important;
+}
+@media screen and (max-width: 1024px){
+.affichageFilmMax1024{
+    width: 100%;
+    text-align:center;
+}
+}
+.affichageFilm{
+    width: 100%;
+    text-align:center;
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
 }

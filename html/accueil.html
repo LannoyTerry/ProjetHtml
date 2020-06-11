@@ -5,91 +5,123 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <title>
             Page d'accueil Cinéma de quartier
         </title>
     </head>
     <body>
-        <main class="row ml-4">
-            <article class="col-md-5 pl-4 pt-4">
-                <header>
-                    <h1>
-                        Cinéma de quartier POMPEY/FROUARD 
-                    </h1>
-                </header>
-                <div>
-                    <div>
+        <main>
+            <article class="row ml-1 mr-1 mt-4 justify-content-center align-items-center">
+                <div class="col-md-4">
                         <img src="./img/ImgCinema.jpg" class="img-thumbnail" alt="image de cinéma"/>
-                        <br>
-                        <p>50 Route d'Arlon, 57100 Thionville</p>
-                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1>Cinémax - THIONVILLE</h1>
+                    <p> 
+                        Route d'Arlon
+                    <br>
+                        57100 Thionville
+                    </p> 
+                    10 Salles
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/ios/50/000000/audio-description.png"/>
+                    &nbsp;
+                    <img src="https://img.icons8.com/ios/50/000000/not-hearing.png"/>
+                    &nbsp;
+                    <img src="https://img.icons8.com/ios/50/000000/accessibility1--v1.png"/>
                 </div>
             </article>
 
 
-            <article class="col-md-5 pt-4 offset-md-1">
-                <header class="row">
-                    <div class="jumbotron jumbotron-fluid text-center col-md-10 offset-md-1">
-                        <div class="container"></div>
-                          <h1 class="display-4 pl-3 text-center">Programmation</h1>
-                          <h3 class="mb-0 pt-4 pb-0">Liste des films</h3>
+            <article>
+                <div class="row ml-1 mr-1 mt-4 justify-content-center align-items-center">
+                    <div class="col-md-2 affichageFilm mt-3">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Lundi 11 Juin 2020
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Lundi 11 Juin 2020</a>
+                              <a class="dropdown-item" href="#">Lundi 12 Juin 2020</a>
+                              <a class="dropdown-item" href="#">Lundi 13 Juin 2020</a>
+                            </div>
+                          </div>                
                         </div>
-                      </div>
-                </header>
-                <div class="row align-items-center">
-                    <div class="col-md-1 col-sm-1 align-items-center h-100">                <a href="#carouselExampleControls" class="bottom-column" role="button" data-slide="prev">
-                        <img src="./img/back.png" height="30px" width="30px"/>
-
-                                                  </a></div>
-
-                <div id="carouselExampleControls" class="carousel slide col-md-10 col-sm-2" data-ride="carousel">
-
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                <div class="card text-center">
-                    <div class="card-header">
-
-                        LES GARDIENS DE LA GALAXIE
-
-                    </div>
-                    <div class="card text-center">
-                        <h5 class="card-title mt-3"> Lundi 15 Juin 2020 - 11:00</h5>
-                      <a href="#" class="btn btn-primary">Réserver</a>
-                    </div>
-                    <div class="card text-center">
-                        <h5 class="card-title mt-3"> Lundi 15 Juin 2020 - 11:00</h5>
-                      <a href="#" class="btn btn-primary">Réserver</a>
-                    </div>
-                  </div>
+                <div class="col-md-2 affichageFilmMax1024 mt-3">
+                        <h4>10 FILMS A L'AFFICHE</h4>
                 </div>
-                <div class="carousel-item">
-                    <div class="card text-center mr-4">
-                        <div class="card-header">
-                          Everest
+                <div class="col-md-2 mt-3">
+                    <form class="form-inline">
+                        <div class="form-group has-search affichageFilmMax1024">
+                          <span class="fa fa-search form-control-feedback"></span>
+                          <input type="text" class="form-control" placeholder="Recherche">
                         </div>
-                        <div class="card text-center">
-                            <h5 class="card-title mt-3"> Lundi 15 Juin 2020 - 11:00</h5>
-                          <a href="#" class="btn btn-primary">Réserver</a>
-                        </div>
-                        <div class="card text-center">
-                            <h5 class="card-title mt-3"> Lundi 15 Juin 2020 - 11:00</h5>
-                          <a href="#" class="btn btn-primary">Réserver</a>
-                        </div>
-                      </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                      </ol>
+                      </form>
+                </div>
+              </div>                      
+
+              <div class="row ml-1 mr-1 pt-4 justify-content-center align-items-center">
+                <div class="col-md-12 col-xl-2 pt-4">
+                        <div class="card pt-3" style="width: 17rem;">
+                            <img src="./img/gardien.jpg" height="265" width="240" class="thumbnail-img pl-3" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center"><a href="#">Les gardiens de la galaxie</a></h5>
+                              <hr>
+                              <p class="card-text text-center">Lundi 11 Juin 2020</p>
+                              <a href="#" class="btn btn-primary mt-2">15:30</a>
+                              <a href="#" class="btn btn-primary mt-2">18:30</a>
+                              <a href="#" class="btn btn-primary mt-2">21:30</a>
+                            </div>
+              </div>
             </div>
-        </div>
-            <div class="col-md-1 col-sm-1 align-items-center h-100">                        
-                <a href="#carouselExampleControls" role="button" data-slide="next">
-                    <img src="./img/next.png" height="30px" width="30px"/>
-                </a></div>
+            <div class="col-md-12 col-xl-2 pt-4">
+                <div class="card pt-3" style="width: 17rem;">
+                    <img src="./img/gardien.jpg" height="265" width="240" class="thumbnail-img pl-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center"><a href="#">Les gardiens de la galaxie</a></h5>
+                      <hr>
+                      <p class="card-text text-center">Lundi 11 Juin 2020</p>
+                      <a href="#" class="btn btn-primary mt-2">15:30</a>
+                      <a href="#" class="btn btn-primary mt-2">18:30</a>
+                      <a href="#" class="btn btn-primary mt-2">21:30</a>
+                    </div>
+      </div>
     </div>
+    <div class="col-md-12 col-xl-2 pt-4">
+        <div class="card pt-3" style="width: 17rem;">
+            <img src="./img/gardien.jpg" height="265" width="240" class="thumbnail-img pl-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center"><a href="#">Les gardiens de la galaxie</a></h5>
+              <hr>
+              <p class="card-text text-center">Lundi 11 Juin 2020</p>
+              <a href="#" class="btn btn-primary mt-2">15:30</a>
+              <a href="#" class="btn btn-primary mt-2">18:30</a>
+              <a href="#" class="btn btn-primary mt-2">21:30</a>
+            </div>
+</div>
+</div>
+<div class="col-md-12 col-xl-2 pt-4">
+    <div class="card pt-3" style="width: 17rem;">
+        <img src="./img/gardien.jpg" height="265" width="240" class="thumbnail-img pl-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center"><a href="#">Les gardiens de la galaxie</a></h5>
+          <hr>
+          <p class="card-text text-center">Lundi 11 Juin 2020</p>
+          <a href="#" class="btn btn-primary mt-2">15:30</a>
+          <a href="#" class="btn btn-primary mt-2">18:30</a>
+          <a href="#" class="btn btn-primary mt-2">21:30</a>
+        </div>
+</div>
+</div>
+                 </div> 
             </article>
         </main>
     </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
