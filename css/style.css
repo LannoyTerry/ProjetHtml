@@ -45,6 +45,28 @@
     width: 100%;
     text-align:center;
 }
+.card {
+    width: 18.5rem;
+}
+.imgCine{
+    height:200px;
+    width:250px;
+}
+}
+@media screen and (max-width: 720px){
+    .card {
+        width: 18rem;
+    }
+}
+@media screen and (min-width: 720px){
+    .card {
+        width: 18rem;
+    }
+}
+@media screen and (min-width: 1600px){
+    .card {
+        width: 17rem;
+    }
 }
 .affichageFilm{
     width: 100%;
@@ -54,4 +76,19 @@
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
+}
+.navbar{
+    background-color:#3F51B5;
+}
+.navbar-brand{
+    font-weight: 500;
+    color: #fff;
+    font-size:2.1rem;
+    margin-left:15%;
+}
+.navbar-nav{
+    margin-left:25%;
+}
+.nav-link:active{
+padding:0;
 }

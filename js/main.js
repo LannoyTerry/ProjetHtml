@@ -26,3 +26,9 @@ function includeHTML() {
     }
   }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  $(document).ready(function () {
+    $(".sidenav").sidenav();
+  });
+});

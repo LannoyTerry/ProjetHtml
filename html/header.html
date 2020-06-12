@@ -1,26 +1,37 @@
-
-  <div class="navbar-fixed">
-    <nav class="nav-wrapper indigo">
-      <div class="container">
-        <a href="#" class="brand-logo"><strong>Cinémax</strong></a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-navbar">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Tarifs</a></li>
-          <li><a href="#">Inscription Newsletter</a></li>
-          <li><a href="#">Panier</a></li>
-          <li><a href="#" class="btn white indigo-text">Administration</a></li>
-        </ul>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Cinémax</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse mt-2" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inscription</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Newsletter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panier</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Administration
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Liste des films disponibles</a>
+                    <a class="dropdown-item" href="#">Liste des films projetés par le cinéma</a>
+                    <a class="dropdown-item" href="#">Ajout d'un film à projeter</a>
+                    <a class="dropdown-item" href="#">Liste des programmations</a>
+                    <a class="dropdown-item" href="#">Ajout d'une programmation</a>
+                  </div>
+                </li>
+    </ul>
   </div>
-
-  <ul class="sidenav" id="mobile-navbar">
-    <li><a href="#">MENÚ</a></li>
-    <hr />
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Portafolio</a></li>
-    <li><a href="#">Acerca de mí</a></li>
-    <li><a href="#">Contacto</a></li>
-  </ul>
+</nav>
