@@ -1,38 +1,40 @@
-  <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">Cinémax</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mt-2" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-     <li class="nav-item active">
-                      <a class="nav-link btn-accueil" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link btn-accueil" href="#">Tarifs</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link btn-accueil" href="#">Inscription Newsletter</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link btn-accueil" href="#">Panier</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link btn-accueil dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Administration
-                      </a>
-                      <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Liste des films disponibles</a>
-                        <hr>
-                        <a class="dropdown-item" href="#">Liste des films projetés par <br>le cinéma</a>
-                        <hr>
-                        <a class="dropdown-item" href="#">Ajout d'un film à projeter</a>
-                        <hr>
-                        <a class="dropdown-item" href="#">Liste des programmations</a>
-                        <hr>
-                        <a class="dropdown-item" href="#">Ajout d'une programmation</a>
-                      </div>
-                    </li>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Cinémax</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse mt-2" id="navbarText">
+    <ul class="nav navbar-nav" id="myDIV">
+      <li class="nav-item lienMenu">
+        <a class="nav-link btn btn-accueil active" /**href="http://localhost/afpa/ProjetHtml/"**/ onclick=loadAccueil()>Accueil</a>
+      </li>    
+      <li class="nav-item lienMenu">
+        <a class="nav-link btn btn-accueil" id="tarifs-tab" data-toggle="tab" href="#tarifs" role="tab" aria-controls="tarifs" aria-selected="false">Tarifs</a>
+      </li>
+      <li class="nav-item lienMenu">
+        <a class="nav-link btn btn-accueil" id="inscriptionNewsletter" /**href="http://localhost/afpa/ProjetHtml/inscription/"**/ onclick=loadInscriptionNewsletter()>Inscription Newsletter</a>
+      </li>
+      <li class="nav-item lienMenu">
+        <a class="nav-link btn btn-accueil" id="panier-tab" data-toggle="tab" href="#panier" role="tab" aria-controls="panier" aria-selected="false">Panier</a>
+      </li>
+      <li class="dropdown nav-item lienMenu">
+        <a class="dropdown-toggle nav-link btn-accueil" data-toggle="dropdown" href="#">Administration</a>
+        <ul class="dropdown-menu mt-2">
+          <li><a class="dropdown-item" href="#">Liste des films disponibles</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="#">Liste des films projetés par <br>le cinéma</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="#">Ajout d'un film à projeter</a></li>  
+          <hr>
+          <li><a class="dropdown-item" href="#">Liste des programmations</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="#">Ajout d'une programmation</a></li>                        
         </ul>
-      </div>
-    </nav>
+      </li>
+    </ul>
+  </div>
+</nav>
+<script>$('.navbar-nav .nav-link').click(function(){
+  $('.navbar-nav .nav-link').removeClass('active');
+  $(this).addClass('active');
+})</script>

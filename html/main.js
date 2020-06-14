@@ -26,15 +26,19 @@ function includeHTML() {
     }
   }
 };
-$('.navbar-nav .nav-link').click(function(){
-  $('.navbar-nav .nav-link').removeClass('active');
-  $(this).addClass('active');
-})
+function myFunction() {
+  document.getElementById("demo").innerHTML = '<div w3-include-html="html/accueil.html"></div> ';
+}
 
+function myFunction2() {
 
-function loadAccueil(){
-  $("#content").load('html/accueil.html');
-};
-function loadInscriptionNewsletter(){
-  $("#content").load('html/inscriptionNewsletter.html');  
-};
+  $('li').click(function() { 
+    $('li.nav-item.active').removeClass("active"); 
+    $(this).addClass("active"); 
+}); 
+}
+function myFunction1() {
+  document.getElementById("inscriptionNewsletter").style.display = "block";
+  document.getElementById("accueil").style.display = "none";
+
+}

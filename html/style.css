@@ -83,7 +83,7 @@
 .navbar-brand{
     margin-left:10%;
 }
-.lienMenu{
+nav li {
     display: inline-block;
     padding: 15px 15px;
  }
@@ -116,7 +116,7 @@
     background-color: white!important;
     color:#3F51B5!important;
 }
-.btn-accueil:hover, .navbar-dark .navbar-nav .nav-link.active, .nav-tabs .nav-link.active{
+.btn-accueil:hover, .navbar-dark .navbar-nav .active>.nav-link{
     background-color: #3F51B5!important;
     color:white!important;
     border-color: white!important;
@@ -301,4 +301,7 @@
     font-weight:600
   }
 }
-
+#accueil{
+  display: none}
+#inscriptionNewsletter{
+  display: block}
